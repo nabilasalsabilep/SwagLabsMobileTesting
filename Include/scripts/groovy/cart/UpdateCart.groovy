@@ -47,23 +47,23 @@ import cucumber.api.java.en.When
 class UpdateCart {
 	@When("User removes product from cart")
 	def Update_Cart() {
-		
+
 		Mobile.scrollToText(GlobalVariable.productNames[0])
-		
+
 		Mobile.delay(1)
-		
+
 		Mobile.tap(findTestObject('Object Repository/CartPage/REMOVEButton'), 10)
-		
+
 		println 'successfully removed the product from the cart'
 	}
-	
+
 	@Then("User verifies cart after update")
 	def Verify_Updated_Cart() {
-		
+
 		int counts = Integer.parseInt(GlobalVariable.counts.toString()) - 1
-		
+
 		Mobile.verifyMatch(Mobile.getText(findTestObject('Object Repository/Header/NumberofItemsintheCart'), 10), counts.toString(), false)
-		
+
 		int verifiedIndex = 1 // because productNames[0] was removed
 
 		// Get initial cart items
@@ -95,7 +95,7 @@ class UpdateCart {
 				cartItems = MobileDriverFactory.getDriver().findElements(By.xpath("//android.view.ViewGroup[@content-desc='test-Item']"))
 			}
 		}
-		
+
 		println 'Successfully updated cart'
 	}
 }
