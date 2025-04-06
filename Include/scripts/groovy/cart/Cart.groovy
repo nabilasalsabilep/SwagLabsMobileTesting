@@ -106,7 +106,7 @@ class Cart {
 
 			if (addedCount < counts) {
 				// Scroll to load more items
-				Mobile.swipe(400, 1110, 400, 500)
+				Mobile.swipe(400, 1200, 400, 500)
 
 				Mobile.delay(2)
 			}
@@ -151,45 +151,50 @@ class Cart {
 
 	@And("User verifies the product in the cart")
 	def Verify_Cart_Page() {
-
-		List<WebElement> cartItems = MobileDriverFactory.getDriver().findElements(By.xpath("//android.view.ViewGroup[@content-desc='test-Item']"))
-
+				
 		int totalVerified = 0
 		int totalToVerify = GlobalVariable.counts
-
-		while (totalVerified < totalToVerify) {
-			// Re-fetch visible items
-			cartItems = MobileDriverFactory.getDriver().findElements(By.xpath("//android.view.ViewGroup[@content-desc='test-Item']"))
-
+		int scrollAttempt = 0
+		int maxScroll = 10 // prevent infinite scroll just in case
+	
+		while (totalVerified < totalToVerify && scrollAttempt < maxScroll) {
+			List<WebElement> cartItems = MobileDriverFactory.getDriver().findElements(By.xpath("//android.view.ViewGroup[@content-desc='test-Item']"))
+	
 			for (int i = 0; i < cartItems.size(); i++) {
 				if (totalVerified >= totalToVerify) {
 					break
 				}
-
+	
 				WebElement item = cartItems[i]
-
+	
 				// Get product info from inside this item block
 				String name = item.findElement(By.xpath(".//android.view.ViewGroup[2]/android.widget.TextView[1]")).getText()
 				String price = item.findElement(By.xpath(".//android.view.ViewGroup[4]/android.widget.TextView[1]")).getText()
 				String desc = item.findElement(By.xpath(".//android.view.ViewGroup[2]/android.widget.TextView[2]")).getText()
-
+	
 				// Verifying with stored values
 				Mobile.verifyMatch(name, GlobalVariable.productNames[totalVerified], false)
 				Mobile.verifyMatch(price, GlobalVariable.productPrices[totalVerified], false)
-				// Only if you have desc visible
 				Mobile.verifyMatch(desc, GlobalVariable.productDesc[totalVerified], false)
-
+	
 				totalVerified++
 			}
-
+	
 			if (totalVerified < totalToVerify) {
-				// Scroll down to reveal more items
-				Mobile.swipe(400, 1500, 400, 500)
-				Mobile.delay(3)
+				Mobile.swipe(500, 1550, 500, 500)
+				Mobile.delay(2)
+				scrollAttempt++
 			}
 		}
-		println 'Product successfully entered the work page'
+	
+		if (totalVerified == totalToVerify) {
+			println "Verified ${totalVerified} items in the cart successfully."
+		} else {
+			KeywordUtil.markFailed("Expected ${totalToVerify}, but only verified ${totalVerified}.")
+		}
+		
 	}
+	
 	@When("User removes product from cart")
 	def Update_Cart() {
 
@@ -209,38 +214,46 @@ class Cart {
 
 		Mobile.verifyMatch(Mobile.getText(findTestObject('Object Repository/Header/NumberofItemsintheCart'), 10), counts.toString(), false)
 
-		int verifiedIndex = 1 // because productNames[0] was removed
+		int totalVerified = 0
+		int totalToVerify = counts
+		int scrollAttempt = 0
+		int maxScroll = 10
 
-		// Get initial cart items
-		List<WebElement> cartItems = MobileDriverFactory.getDriver().findElements(By.xpath("//android.view.ViewGroup[@content-desc='test-Item']"))
+		while (totalVerified < totalToVerify && scrollAttempt < maxScroll) {
+			List<WebElement> cartItems = MobileDriverFactory.getDriver().findElements(By.xpath("//android.view.ViewGroup[@content-desc='test-Item']"))
 
-		while (verifiedIndex <= counts) {
-			for (int i = 0; i < cartItems.size() && verifiedIndex <= counts; i++) {
+			for (int i = 0; i < cartItems.size(); i++) {
+				if (totalVerified >= totalToVerify) {
+					break
+				}
+
 				WebElement item = cartItems[i]
 
-				// Read data from UI
 				String name = item.findElement(By.xpath(".//android.view.ViewGroup[2]/android.widget.TextView[1]")).getText()
-				String desc = item.findElement(By.xpath(".//android.view.ViewGroup[2]/android.widget.TextView[2]")).getText()
 				String price = item.findElement(By.xpath(".//android.view.ViewGroup[4]/android.widget.TextView[1]")).getText()
+				String desc = item.findElement(By.xpath(".//android.view.ViewGroup[2]/android.widget.TextView[2]")).getText()
 
-				// Match with GlobalVariable (starting from index 1)
-				Mobile.verifyMatch(name, GlobalVariable.productNames[verifiedIndex], false)
-				Mobile.verifyMatch(desc, GlobalVariable.productDesc[verifiedIndex], false)
-				Mobile.verifyMatch(price, GlobalVariable.productPrices[verifiedIndex], false)
+				// Compare with index +1 since first product was removed
+				int dataIndex = totalVerified + 1
 
-				verifiedIndex++
+				Mobile.verifyMatch(name, GlobalVariable.productNames[dataIndex], false)
+				Mobile.verifyMatch(price, GlobalVariable.productPrices[dataIndex], false)
+				Mobile.verifyMatch(desc, GlobalVariable.productDesc[dataIndex], false)
+
+				totalVerified++
 			}
 
-			// Scroll only if there are still unverified items left
-			if (verifiedIndex <= counts) {
-				Mobile.swipe(400, 1450, 400, 500)
-				Mobile.delay(1)
-
-				// Refresh the list after scroll
-				cartItems = MobileDriverFactory.getDriver().findElements(By.xpath("//android.view.ViewGroup[@content-desc='test-Item']"))
+			if (totalVerified < totalToVerify) {
+				Mobile.swipe(500, 1550, 500, 500)
+				Mobile.delay(2)
+				scrollAttempt++
 			}
 		}
 
-		println 'Successfully updated cart'
+		if (totalVerified == totalToVerify) {
+			println "✅ Verified ${totalVerified} items. Cart successfully updated."
+		} else {
+			KeywordUtil.markFailed("❌ Expected ${totalToVerify} items, but only verified ${totalVerified}.")
+		}
 	}
 }

@@ -3,7 +3,7 @@
    <description></description>
    <name>ProductName</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>c8dce471-5a2c-4c33-85ec-0c192163a7c1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -13,7 +13,7 @@
       <name>class</name>
       <type>Main</type>
       <value>android.widget.TextView</value>
-      <webElementGuid>f679c15c-e041-4851-a3a2-8ff7e5093baa</webElementGuid>
+      <webElementGuid>56373132-9227-4236-88c8-4688891db8e0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +21,7 @@
       <name>index</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>4e8f22ac-8e51-4e4f-9e2b-45151ad29898</webElementGuid>
+      <webElementGuid>fbb3d1ff-b620-49ee-a441-b3c05195a2e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,7 +29,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Sauce Labs Backpack</value>
-      <webElementGuid>8563685e-9c3e-4fc0-8c19-11d98f4ee220</webElementGuid>
+      <webElementGuid>1984f4bf-20e4-4bc0-b446-c0a7eea841ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>package</name>
       <type>Main</type>
       <value>com.swaglabsmobileapp</value>
-      <webElementGuid>1fba42c1-d8d4-4c7d-a695-adfb77dc6f21</webElementGuid>
+      <webElementGuid>4f17d80a-78d4-4cbc-a950-d94f836db461</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>checkable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>bbbd936c-e0ee-4d52-b52e-f3f4909e7e9a</webElementGuid>
+      <webElementGuid>2ab59e22-62eb-4921-93cd-4594b5fc35d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>checked</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>0624ee2c-3a2a-4d7c-9a5b-af4769c72a5c</webElementGuid>
+      <webElementGuid>758726fb-a2fc-43ea-b27e-8410c79fb9a4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>4a122e20-4c30-45eb-b191-c1ee4cc340cf</webElementGuid>
+      <webElementGuid>f76d2159-d6d0-40b0-ad7a-0e304874f62a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>8737370f-c75a-4a84-bb79-cba750f1dc13</webElementGuid>
+      <webElementGuid>42300144-ef9f-408b-89eb-d9cd245dab2b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>focusable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>a64d20dd-6d7c-42d4-a462-9559305ec434</webElementGuid>
+      <webElementGuid>bf3f835f-7fdf-4bec-84d3-62808fd131b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>focused</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>8a31e792-af71-4d98-9454-05c2d0359776</webElementGuid>
+      <webElementGuid>a5610733-7ea5-4450-9aaf-0d8964f9ddaf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>scrollable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>dd519a68-8480-4416-8c93-27952f5fce7f</webElementGuid>
+      <webElementGuid>12f9a589-6c3c-45d2-bf0a-cadceec4ea68</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>long-clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>8900ff1c-63ff-4996-b716-e60eb56414f7</webElementGuid>
+      <webElementGuid>9ad54d57-58a5-44f1-b080-7aee7320e4f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>password</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>91672dc5-fe62-4495-a746-5e2a9a6f0d35</webElementGuid>
+      <webElementGuid>7bf2075e-8a19-41f8-828b-a6b51e76bc42</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>7066047e-51a8-418c-9daa-55abe7a6c942</webElementGuid>
+      <webElementGuid>3dcf26b2-5b22-42c4-bc09-837237ca09c9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>x</name>
       <type>Main</type>
       <value>193</value>
-      <webElementGuid>1e7d1cf8-eee0-4ad1-a412-06bc49c18689</webElementGuid>
+      <webElementGuid>c7629266-2ab6-41bb-9ce3-630babdbb745</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -133,7 +133,7 @@
       <name>y</name>
       <type>Main</type>
       <value>646</value>
-      <webElementGuid>803d9bc5-a6d2-4bc5-b6a6-5bbc5f773101</webElementGuid>
+      <webElementGuid>0852ee12-93c2-4a88-a634-438590df5983</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -141,7 +141,7 @@
       <name>width</name>
       <type>Main</type>
       <value>860</value>
-      <webElementGuid>3ed7b6fb-c30d-497d-8f88-38ac409fa14b</webElementGuid>
+      <webElementGuid>d92802da-e7ca-486b-a4f8-988048226a41</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -149,7 +149,7 @@
       <name>height</name>
       <type>Main</type>
       <value>90</value>
-      <webElementGuid>efc98a08-7cd1-4f48-b97b-7adf47c9a480</webElementGuid>
+      <webElementGuid>b6a711b8-2b16-4b7e-ba82-5ea5365d11b2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -157,7 +157,7 @@
       <name>bounds</name>
       <type>Main</type>
       <value>[193,646][1053,736]</value>
-      <webElementGuid>7b109318-fbe6-4533-8346-bfc5b7951748</webElementGuid>
+      <webElementGuid>0058ae8a-51c8-45fa-b01b-e914686fb4af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -165,7 +165,7 @@
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>2330875b-e593-4468-b042-c5f0cdc46f1e</webElementGuid>
+      <webElementGuid>bd666461-92d6-4378-bec3-79aef089db81</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -173,24 +173,36 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.widget.TextView[1]</value>
-      <webElementGuid>d3c7cee9-a45d-46c5-aaad-443198699e35</webElementGuid>
+      <webElementGuid>d74ad0ee-1d67-4b0c-afc6-4c33844cf007</webElementGuid>
    </webElementProperties>
-   <locator>//*[@class = 'android.widget.TextView' and (@text = 'Sauce Labs Backpack' or . = 'Sauce Labs Backpack')]</locator>
+   <locator>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.widget.TextView[1]</locator>
    <locatorCollection>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value>enabled == 1</value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value>**[`enabled == 1`]</value>
+      </entry>
+      <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
       <entry>
          <key>ATTRIBUTES</key>
          <value>//*[@class = 'android.widget.TextView' and (@text = 'Sauce Labs Backpack' or . = 'Sauce Labs Backpack')]</value>
       </entry>
       <entry>
-         <key>IOS_CLASS_CHAIN</key>
-         <value></value>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector().className(&quot;android.widget.TextView&quot;).text(&quot;Sauce Labs Backpack&quot;).packageName(&quot;com.swaglabsmobileapp&quot;).enabled(true).clickable(false).longClickable(false).checkable(false).checked(false).focusable(false).focused(false).scrollable(false).selected(false).index(0)</value>
       </entry>
       <entry>
-         <key>ACCESSIBILITY</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.widget.TextView[1]</value>
       </entry>
       <entry>
-         <key>ID</key>
+         <key>ANDROID_VIEWTAG</key>
          <value></value>
       </entry>
       <entry>
@@ -198,11 +210,7 @@
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector().className(&quot;android.widget.TextView&quot;).text(&quot;Sauce Labs Backpack&quot;).packageName(&quot;com.swaglabsmobileapp&quot;).enabled(true).clickable(false).longClickable(false).checkable(false).checked(false).focusable(false).focused(false).scrollable(false).selected(false).index(0)</value>
-      </entry>
-      <entry>
-         <key>NAME</key>
+         <key>ACCESSIBILITY</key>
          <value></value>
       </entry>
       <entry>
@@ -210,22 +218,14 @@
          <value>android.widget.TextView</value>
       </entry>
       <entry>
-         <key>IOS_PREDICATE_STRING</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.widget.TextView[1]</value>
-      </entry>
-      <entry>
          <key>CUSTOM</key>
          <value></value>
       </entry>
       <entry>
-         <key>ANDROID_VIEWTAG</key>
+         <key>ID</key>
          <value></value>
       </entry>
    </locatorCollection>
-   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>
