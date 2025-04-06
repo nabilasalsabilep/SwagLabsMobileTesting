@@ -44,7 +44,7 @@ import cucumber.api.java.en.When
 
 
 
-class AddtoCart {
+class Cart {
 	@When("User taps the add to cart button of {int} products from the product list or details")
 	def Add_to_Cart_Products(int counts) {
 
@@ -184,10 +184,63 @@ class AddtoCart {
 
 			if (totalVerified < totalToVerify) {
 				// Scroll down to reveal more items
-				Mobile.swipe(400, 1480, 400, 500)
+				Mobile.swipe(400, 1500, 400, 500)
 				Mobile.delay(3)
 			}
 		}
 		println 'Product successfully entered the work page'
+	}
+	@When("User removes product from cart")
+	def Update_Cart() {
+
+		Mobile.scrollToText(GlobalVariable.productNames[0])
+
+		Mobile.delay(1)
+
+		Mobile.tap(findTestObject('Object Repository/CartPage/REMOVEButton'), 10)
+
+		println 'successfully removed the product from the cart'
+	}
+
+	@Then("User verifies cart after update")
+	def Verify_Updated_Cart() {
+
+		int counts = Integer.parseInt(GlobalVariable.counts.toString()) - 1
+
+		Mobile.verifyMatch(Mobile.getText(findTestObject('Object Repository/Header/NumberofItemsintheCart'), 10), counts.toString(), false)
+
+		int verifiedIndex = 1 // because productNames[0] was removed
+
+		// Get initial cart items
+		List<WebElement> cartItems = MobileDriverFactory.getDriver().findElements(By.xpath("//android.view.ViewGroup[@content-desc='test-Item']"))
+
+		while (verifiedIndex <= counts) {
+			for (int i = 0; i < cartItems.size() && verifiedIndex <= counts; i++) {
+				WebElement item = cartItems[i]
+
+				// Read data from UI
+				String name = item.findElement(By.xpath(".//android.view.ViewGroup[2]/android.widget.TextView[1]")).getText()
+				String desc = item.findElement(By.xpath(".//android.view.ViewGroup[2]/android.widget.TextView[2]")).getText()
+				String price = item.findElement(By.xpath(".//android.view.ViewGroup[4]/android.widget.TextView[1]")).getText()
+
+				// Match with GlobalVariable (starting from index 1)
+				Mobile.verifyMatch(name, GlobalVariable.productNames[verifiedIndex], false)
+				Mobile.verifyMatch(desc, GlobalVariable.productDesc[verifiedIndex], false)
+				Mobile.verifyMatch(price, GlobalVariable.productPrices[verifiedIndex], false)
+
+				verifiedIndex++
+			}
+
+			// Scroll only if there are still unverified items left
+			if (verifiedIndex <= counts) {
+				Mobile.swipe(400, 1450, 400, 500)
+				Mobile.delay(1)
+
+				// Refresh the list after scroll
+				cartItems = MobileDriverFactory.getDriver().findElements(By.xpath("//android.view.ViewGroup[@content-desc='test-Item']"))
+			}
+		}
+
+		println 'Successfully updated cart'
 	}
 }
