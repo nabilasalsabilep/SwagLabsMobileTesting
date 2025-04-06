@@ -49,7 +49,7 @@ class Login {
 	def Opens_Swag_Labs_Mobile_Apps() {
 
 		Mobile.startApplication(System.getProperty('user.dir') + '/Data Files/SauceLabs.apk', false)
-		
+
 		Mobile.waitForElementPresent(findTestObject('Object Repository/LoginPage/ApplicationIcon'), 30)
 
 		Mobile.verifyElementExist(findTestObject('Object Repository/LoginPage/ApplicationIcon'), 10)
@@ -111,7 +111,7 @@ class Login {
 
 	@Then("The system displays the products page")
 	def Displays_Products_Page() {
-		
+
 		Mobile.waitForElementPresent(findTestObject('Object Repository/Header/ApplicationIcon'), 30)
 
 		Mobile.verifyElementExist(findTestObject('Object Repository/Header/BurgerMenuButton'), 10)
