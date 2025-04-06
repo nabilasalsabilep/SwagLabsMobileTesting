@@ -1,7 +1,7 @@
 @Cart
 Feature: Cart feature
 
-	@UpdateCart
+  @UpdateCart
   Scenario: User wants to update the cart by removing products from the cart
     Given User opens swag labs application via mobile device
     And User input valid username
