@@ -1,4 +1,4 @@
-package scroll
+package swipe
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -29,7 +29,7 @@ import org.openqa.selenium.interactions.Sequence
 import java.time.Duration
 import java.util.Arrays
 
-public class ScrollTo {
+public class Swipe {
 	@Keyword
 	def swipeaction(int startx, int starty, int endx, int endy) {
 		def driver = MobileDriverFactory.getDriver()
