@@ -133,12 +133,12 @@ class Checkout {
 			if (totalVerified < totalToVerify) {
 				// Scroll down to reveal more items
 				ScrollTo scrollto = new ScrollTo()
-				scrollto.swipeaction(400, 1700, 400, 500)
+				scrollto.swipeaction(400, 1650, 400, 500)
 				Mobile.delay(2)
 			}
 		}
 
-		if(Mobile.waitForElementNotPresent(findTestObject('Object Repository/CheckoutPage/OverviewPage/PaymentInformation'), 10)) {
+		if(Mobile.waitForElementNotPresent(findTestObject('Object Repository/CheckoutPage/OverviewPage/PaymentInformation'), 3)) {
 
 			Mobile.scrollToText('SauceCard #31337')
 		}
@@ -146,7 +146,7 @@ class Checkout {
 		// Validate Payment Information
 		Mobile.verifyMatch(Mobile.getText(findTestObject('Object Repository/CheckoutPage/OverviewPage/PaymentInformation'), 10), 'SauceCard #31337', false)
 
-		if(Mobile.waitForElementNotPresent(findTestObject('Object Repository/CheckoutPage/OverviewPage/ShoppingInformation'), 10)) {
+		if(Mobile.waitForElementNotPresent(findTestObject('Object Repository/CheckoutPage/OverviewPage/ShoppingInformation'), 3)) {
 
 			Mobile.scrollToText('FREE PONY EXPRESS DELIVERY!')
 		}
@@ -155,7 +155,7 @@ class Checkout {
 		Mobile.verifyMatch(Mobile.getText(findTestObject('Object Repository/CheckoutPage/OverviewPage/ShoppingInformation'), 10), 'FREE PONY EXPRESS DELIVERY!', false)
 
 
-		if(Mobile.waitForElementNotPresent(findTestObject('Object Repository/CheckoutPage/OverviewPage/ItemTotal'), 10)) {
+		if(Mobile.waitForElementNotPresent(findTestObject('Object Repository/CheckoutPage/OverviewPage/ItemTotal'), 3)) {
 
 			Mobile.scrollToText('Item Total')
 		}
@@ -169,7 +169,7 @@ class Checkout {
 
 		Mobile.verifyMatch(totalPrice.toString(), calculatedSum.toString(), false)
 
-		if(Mobile.waitForElementNotPresent(findTestObject('Object Repository/CheckoutPage/OverviewPage/Tax'), 10)) {
+		if(Mobile.waitForElementNotPresent(findTestObject('Object Repository/CheckoutPage/OverviewPage/Tax'), 3)) {
 
 			Mobile.scrollToText('Tax')
 		}
@@ -183,7 +183,7 @@ class Checkout {
 
 		Mobile.verifyMatch(Mobile.getText(findTestObject('Object Repository/CheckoutPage/OverviewPage/Tax'), 10), 'Tax: $' + formattedTax, false)
 
-		if(Mobile.waitForElementNotPresent(findTestObject('Object Repository/CheckoutPage/OverviewPage/Total'), 10)) {
+		if(Mobile.waitForElementNotPresent(findTestObject('Object Repository/CheckoutPage/OverviewPage/Total'), 3)) {
 
 			Mobile.scrollToText('CANCEL')
 		}
@@ -209,12 +209,12 @@ class Checkout {
 	@And("User taps Finish button")
 	def Tap_Finish() {
 
-		if(Mobile.waitForElementNotPresent(findTestObject('Object Repository/CheckoutPage/OverviewPage/FINISHButton'), 10)) {
+		if(Mobile.waitForElementNotPresent(findTestObject('Object Repository/CheckoutPage/OverviewPage/FINISHButton'), 3)) {
 
 			Mobile.scrollToText('FINISH')
 		}
 
-		Mobile.tap(findTestObject('Object Repository/CheckoutPage/OverviewPage/FINISHButton'), 10)
+		Mobile.tap(findTestObject('Object Repository/CheckoutPage/OverviewPage/FINISHButton'), 3)
 
 		println 'Successfully tap the Finish button'
 	}

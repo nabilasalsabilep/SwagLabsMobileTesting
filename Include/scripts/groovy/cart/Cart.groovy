@@ -184,7 +184,7 @@ class Cart {
 			if (totalVerified < totalToVerify) {
 				Mobile.delay(1)
 				ScrollTo scrollto = new ScrollTo()
-				scrollto.swipeaction(400, 1850, 400, 500)
+				scrollto.swipeaction(400, 1820, 400, 500)
 				Mobile.delay(3)
 				scrollAttempt++
 			}
@@ -206,13 +206,24 @@ class Cart {
 
 		Mobile.tap(findTestObject('Object Repository/CartPage/REMOVEButton'), 10)
 
+		Mobile.delay(1)
+
+		Mobile.swipe(193, 736, 28, 736)
+
+		Mobile.delay(1)
+
+		Mobile.tap(findTestObject('Object Repository/CartPage/TrashIconButton'), 10)
+
+		Mobile.delay(1)
+
 		println 'successfully removed the product from the cart'
 	}
 
 	@Then("User verifies cart after update")
 	def Verify_Updated_Cart() {
 
-		int counts = Integer.parseInt(GlobalVariable.counts.toString()) - 1
+		// Verify the number of products in the cart decreased by 2
+		int counts = Integer.parseInt(GlobalVariable.counts.toString()) - 2
 
 		Mobile.verifyMatch(Mobile.getText(findTestObject('Object Repository/Header/NumberofItemsintheCart'), 10), counts.toString(), false)
 
@@ -235,8 +246,8 @@ class Cart {
 				String price = item.findElement(By.xpath(".//android.view.ViewGroup[4]/android.widget.TextView[1]")).getText()
 				String desc = item.findElement(By.xpath(".//android.view.ViewGroup[2]/android.widget.TextView[2]")).getText()
 
-				// Compare with index +1 since first product was removed
-				int dataIndex = totalVerified + 1
+				// Compare with index +2 since first product was removed
+				int dataIndex = totalVerified + 2
 
 				Mobile.verifyMatch(name, GlobalVariable.productNames[dataIndex], false)
 				Mobile.verifyMatch(price, GlobalVariable.productPrices[dataIndex], false)
