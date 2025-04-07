@@ -43,7 +43,7 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 import randomdata.*
-import scroll.*
+import swipe.*
 
 class Checkout {
 
@@ -132,8 +132,8 @@ class Checkout {
 
 			if (totalVerified < totalToVerify) {
 				// Scroll down to reveal more items
-				ScrollTo scrollto = new ScrollTo()
-				scrollto.swipeaction(400, 1650, 400, 500)
+				Swipe swipe = new Swipe()
+				swipe.swipeaction(400, 1650, 400, 500)
 				Mobile.delay(2)
 			}
 		}

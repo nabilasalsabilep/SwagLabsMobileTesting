@@ -42,7 +42,7 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
-import scroll.*
+import swipe.*
 
 
 class Cart {
@@ -107,8 +107,8 @@ class Cart {
 
 			if (addedCount < counts) {
 				// Scroll to load more items
-				ScrollTo scrollto = new ScrollTo()
-				scrollto.swipeaction(400, 1350, 400, 500)
+				Swipe swipe = new Swipe()
+				swipe.swipeaction(400, 1350, 400, 500)
 				Mobile.delay(2)
 			}
 		}
@@ -183,8 +183,8 @@ class Cart {
 
 			if (totalVerified < totalToVerify) {
 				Mobile.delay(1)
-				ScrollTo scrollto = new ScrollTo()
-				scrollto.swipeaction(400, 1820, 400, 500)
+				Swipe swipe = new Swipe()
+				swipe.swipeaction(400, 1800, 400, 500)
 				Mobile.delay(3)
 				scrollAttempt++
 			}
@@ -258,8 +258,8 @@ class Cart {
 
 			if (totalVerified < totalToVerify) {
 				Mobile.delay(1)
-				ScrollTo scrollto = new ScrollTo()
-				scrollto.swipeaction(400, 1800, 400, 500)
+				Swipe swipe = new Swipe()
+				swipe.swipeaction(400, 1800, 400, 500)
 				Mobile.delay(3)
 				scrollAttempt++
 			}
