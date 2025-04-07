@@ -1,77 +1,78 @@
 [38;5;112m[Appium][0m Welcome to Appium v2.17.1 (REV 2f6db3757e6c8533750264c0d397c3671665e2f4)
 [38;5;112m[Appium][0m Non-default server args:
-[38;5;112m[Appium][0m { basePath: [32m'/wd/hub'[39m, loglevel: [32m'info'[39m, port: [33m53921[39m }
+[38;5;112m[Appium][0m { basePath: [32m'/wd/hub'[39m, loglevel: [32m'info'[39m, port: [33m49328[39m }
 [38;5;112m[Appium][0m Attempting to load driver uiautomator2...
-[38;5;112m[Appium][0m Appium REST http interface listener started on http://0.0.0.0:53921/wd/hub
+[38;5;112m[Appium][0m Appium REST http interface listener started on http://0.0.0.0:49328/wd/hub
 [38;5;112m[Appium][0m You can provide the following URLs in your client code to connect to this server:
-	http://127.0.0.1:53921/wd/hub (only accessible from the same host)
-	http://192.168.1.12:53921/wd/hub
+	http://127.0.0.1:49328/wd/hub (only accessible from the same host)
+	http://192.168.1.12:49328/wd/hub
 [38;5;112m[Appium][0m Available drivers:
 [38;5;112m[Appium][0m   - uiautomator2@3.9.0 (automationName 'UiAutomator2')
 [38;5;112m[Appium][0m No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
 [38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m {}
-[38;5;86m[HTTP][0m <-- GET /wd/hub/status 200 3 ms - 200 
+[38;5;86m[HTTP][0m <-- GET /wd/hub/status 200 4 ms - 200 
 [38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m {}
 [38;5;86m[HTTP][0m <-- GET /wd/hub/status 200 1 ms - 200 
-[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m {"capabilities":{"firstMatch":[{"appium:app":"/Users/salsa/Katalon Studio/SwagLabsMobileTesting/Data Files/SauceLabs.apk","appium:appActivity":"com.swaglabsmobileapp.SplashActivity","appium:appPackage":"com.swaglabsmobileapp","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceId":"adb-gejrvowwzpsc7hon-jr2eE0._adb-tls-connect._tcp","appium:deviceName":"Xiaomi 21081111RG","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"appium:platformName":"ANDROID","appium:platformVersion":"14","appium:systemPort":53930,"appium:udid":"adb-gejrvowwzpsc7hon-jr2eE0._adb-tls-connect._tcp","platformName":"ANDROID"}]},"desiredCapabilities":{"appium:app":"/Users/salsa/Katalon Studio/SwagLabsMobileTesting/Data Files/SauceLabs.apk","appium:appActivity":"com.swaglabsmobileapp.SplashActivity","appium:appPackage":"com.swaglabsmobileapp","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceId":"adb-gejrvowwzpsc7hon-jr2eE0._adb-tls-con...
+[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m {"capabilities":{"firstMatch":[{"appium:app":"/Users/salsa/Katalon Studio/SwagLabsMobileTesting/Data Files/SauceLabs.apk","appium:appActivity":"com.swaglabsmobileapp.SplashActivity","appium:appPackage":"com.swaglabsmobileapp","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceId":"adb-gejrvowwzpsc7hon-jr2eE0._adb-tls-connect._tcp","appium:deviceName":"Xiaomi 21081111RG","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"appium:platformName":"ANDROID","appium:platformVersion":"14","appium:systemPort":49337,"appium:udid":"adb-gejrvowwzpsc7hon-jr2eE0._adb-tls-connect._tcp","platformName":"ANDROID"}]},"desiredCapabilities":{"appium:app":"/Users/salsa/Katalon Studio/SwagLabsMobileTesting/Data Files/SauceLabs.apk","appium:appActivity":"com.swaglabsmobileapp.SplashActivity","appium:appPackage":"com.swaglabsmobileapp","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceId":"adb-gejrvowwzpsc7hon-jr2eE0._adb-tls-con...
 [38;5;123m[BaseDriver][0m Ignoring capability 'appium:platformName=ANDROID' and using capability 'platformName=ANDROID'
 [38;5;123m[BaseDriver][0m The capabilities ["platformName"] are standard capabilities and do not require "appium:" prefix
 [38;5;112m[Appium][0m Attempting to find matching driver for automationName 'uiautomator2' and platformName 'ANDROID'
 [38;5;112m[Appium][0m The 'uiautomator2' driver was installed and matched caps.
 [38;5;112m[Appium][0m Will require it at /Users/salsa/.appium/node_modules/appium-uiautomator2-driver
-[38;5;82m[AppiumDriver@2b8f][0m Appium v2.17.1 creating new AndroidUiautomator2Driver (v3.9.0) session
-[38;5;82m[AppiumDriver@2b8f][0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
-[38;5;82m[AppiumDriver@2b8f][0m Appium's BaseDriver version is 9.16.4
-[38;5;82m[AppiumDriver@2b8f][0m AndroidUiautomator2Driver's BaseDriver version is 9.16.4
-[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m The following provided capabilities were not recognized by this driver:
-[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m   deviceId
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Session created with session id: 92e07f53-0ece-4d92-9c1b-6c9c48024012
-[38;5;111m[92e07f53][0m[38;5;229m[ADB][0m Found 1 'build-tools' folders under '/Users/salsa/.katalon/tools/android_sdk' (newest first):
-[38;5;111m[92e07f53][0m[38;5;229m[ADB][0m     /Users/salsa/.katalon/tools/android_sdk/build-tools/29.0.3
-[38;5;111m[92e07f53][0m[38;5;229m[ADB][0m Using 'adb' from '/Users/salsa/.katalon/tools/android_sdk/platform-tools/adb'
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Retrieving device list
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Using device: adb-gejrvowwzpsc7hon-jr2eE0._adb-tls-connect._tcp
-[38;5;111m[92e07f53][0m[38;5;229m[ADB][0m Using 'adb' from '/Users/salsa/.katalon/tools/android_sdk/platform-tools/adb'
-[38;5;111m[92e07f53][0m[38;5;123m[BaseDriver][0m Using local app '/Users/salsa/Katalon Studio/SwagLabsMobileTesting/Data Files/SauceLabs.apk'
-[38;5;111m[92e07f53][0m[38;5;229m[ADB][0m Getting device platform version
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Relaxing hidden api policy
-[38;5;111m[92e07f53][0m[38;5;229m[ADB][0m Using 'aapt2' from '/Users/salsa/.katalon/tools/android_sdk/build-tools/29.0.3/aapt2'
-[38;5;111m[92e07f53][0m[38;5;229m[ADB][0m Using 'apksigner.jar' from '/Users/salsa/.katalon/tools/android_sdk/build-tools/29.0.3/lib/apksigner.jar'
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Server packages are not going to be (re)installed
-[38;5;111m[92e07f53][0m[38;5;229m[ADB][0m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
-[38;5;111m[92e07f53][0m[38;5;229m[ADB][0m '/Users/salsa/Katalon Studio/SwagLabsMobileTesting/Data Files/SauceLabs.apk' is signed with a non-default certificate
-[38;5;111m[92e07f53][0m[38;5;229m[ADB][0m The application at '/Users/salsa/Katalon Studio/SwagLabsMobileTesting/Data Files/SauceLabs.apk' will not be cached, because the device under test has confirmed the support of streamed installs
-[38;5;111m[92e07f53][0m[38;5;229m[ADB][0m The installation of 'SauceLabs.apk' took 50254ms
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Starting UIAutomator2 server 7.1.3
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Using UIAutomator2 server from '/Users/salsa/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.1.3.apk' and test from '/Users/salsa/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Waiting up to 30000ms for UiAutomator2 to be online...
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m socket hang up
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m socket hang up
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Determined the downstream protocol as 'W3C'
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Screen already unlocked, doing nothing
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Starting 'com.swaglabsmobileapp/com.swaglabsmobileapp.SplashActivity and waiting for 'com.swaglabsmobileapp/com.swaglabsmobileapp.SplashActivity'
-[38;5;111m[92e07f53][0m[38;5;82m[AppiumDriver@2b8f][0m New AndroidUiautomator2Driver session created successfully, session 92e07f53-0ece-4d92-9c1b-6c9c48024012 added to master session list
-[38;5;111m[92e07f53][0m[38;5;86m[HTTP][0m <-- POST /wd/hub/session 200 58233 ms - 1643 
+[38;5;64m[AppiumDriver@c46a][0m Appium v2.17.1 creating new AndroidUiautomator2Driver (v3.9.0) session
+[38;5;64m[AppiumDriver@c46a][0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+[38;5;64m[AppiumDriver@c46a][0m Appium's BaseDriver version is 9.16.4
+[38;5;64m[AppiumDriver@c46a][0m AndroidUiautomator2Driver's BaseDriver version is 9.16.4
+[38;5;-121m[AndroidUiautomator2Driver@eedd][0m The following provided capabilities were not recognized by this driver:
+[38;5;-121m[AndroidUiautomator2Driver@eedd][0m   deviceId
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Session created with session id: 28658047-f0b2-4e62-8603-4ae08c9c1518
+[38;5;156m[28658047][0m[38;5;229m[ADB][0m Found 1 'build-tools' folders under '/Users/salsa/.katalon/tools/android_sdk' (newest first):
+[38;5;156m[28658047][0m[38;5;229m[ADB][0m     /Users/salsa/.katalon/tools/android_sdk/build-tools/29.0.3
+[38;5;156m[28658047][0m[38;5;229m[ADB][0m Using 'adb' from '/Users/salsa/.katalon/tools/android_sdk/platform-tools/adb'
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Retrieving device list
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Using device: adb-gejrvowwzpsc7hon-jr2eE0._adb-tls-connect._tcp
+[38;5;156m[28658047][0m[38;5;229m[ADB][0m Using 'adb' from '/Users/salsa/.katalon/tools/android_sdk/platform-tools/adb'
+[38;5;156m[28658047][0m[38;5;123m[BaseDriver][0m Using local app '/Users/salsa/Katalon Studio/SwagLabsMobileTesting/Data Files/SauceLabs.apk'
+[38;5;156m[28658047][0m[38;5;229m[ADB][0m Getting device platform version
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Relaxing hidden api policy
+[38;5;156m[28658047][0m[38;5;229m[ADB][0m Using 'aapt2' from '/Users/salsa/.katalon/tools/android_sdk/build-tools/29.0.3/aapt2'
+[38;5;156m[28658047][0m[38;5;229m[ADB][0m Using 'apksigner.jar' from '/Users/salsa/.katalon/tools/android_sdk/build-tools/29.0.3/lib/apksigner.jar'
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Server packages are not going to be (re)installed
+[38;5;156m[28658047][0m[38;5;229m[ADB][0m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+[38;5;156m[28658047][0m[38;5;229m[ADB][0m '/Users/salsa/Katalon Studio/SwagLabsMobileTesting/Data Files/SauceLabs.apk' is signed with a non-default certificate
+[38;5;156m[28658047][0m[38;5;229m[ADB][0m The application at '/Users/salsa/Katalon Studio/SwagLabsMobileTesting/Data Files/SauceLabs.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+[38;5;156m[28658047][0m[38;5;229m[ADB][0m The installation of 'SauceLabs.apk' took 9449ms
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Starting UIAutomator2 server 7.1.3
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Using UIAutomator2 server from '/Users/salsa/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.1.3.apk' and test from '/Users/salsa/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Waiting up to 30000ms for UiAutomator2 to be online...
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m socket hang up
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m socket hang up
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m socket hang up
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Determined the downstream protocol as 'W3C'
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Screen already unlocked, doing nothing
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Starting 'com.swaglabsmobileapp/com.swaglabsmobileapp.SplashActivity and waiting for 'com.swaglabsmobileapp/com.swaglabsmobileapp.SplashActivity'
+[38;5;156m[28658047][0m[38;5;64m[AppiumDriver@c46a][0m New AndroidUiautomator2Driver session created successfully, session 28658047-f0b2-4e62-8603-4ae08c9c1518 added to master session list
+[38;5;156m[28658047][0m[38;5;86m[HTTP][0m <-- POST /wd/hub/session 200 17384 ms - 1643 
 [38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m {}
-[38;5;86m[HTTP][0m <-- GET /wd/hub/status 200 2 ms - 200 
-[38;5;111m[92e07f53][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/92e07f53-0ece-4d92-9c1b-6c9c48024012/timeouts[39m {"implicit":60000}
-[38;5;111m[92e07f53][0m[38;5;86m[HTTP][0m <-- POST /wd/hub/session/92e07f53-0ece-4d92-9c1b-6c9c48024012/timeouts 200 3 ms - 14 
-[38;5;111m[92e07f53][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/92e07f53-0ece-4d92-9c1b-6c9c48024012/source[39m {}
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Replacing sessionId 7e3038b6-1d3b-472a-91c2-15204e75698e with 92e07f53-0ece-4d92-9c1b-6c9c48024012
-[38;5;111m[92e07f53][0m[38;5;86m[HTTP][0m <-- GET /wd/hub/session/92e07f53-0ece-4d92-9c1b-6c9c48024012/source 200 719 ms - 12655 
-[38;5;111m[92e07f53][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/92e07f53-0ece-4d92-9c1b-6c9c48024012/screenshot[39m {}
-[38;5;111m[92e07f53][0m[38;5;86m[HTTP][0m <-- GET /wd/hub/session/92e07f53-0ece-4d92-9c1b-6c9c48024012/screenshot 200 865 ms - 305640 
-[38;5;111m[92e07f53][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/92e07f53-0ece-4d92-9c1b-6c9c48024012/source[39m {}
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Replacing sessionId 7e3038b6-1d3b-472a-91c2-15204e75698e with 92e07f53-0ece-4d92-9c1b-6c9c48024012
-[38;5;111m[92e07f53][0m[38;5;86m[HTTP][0m <-- GET /wd/hub/session/92e07f53-0ece-4d92-9c1b-6c9c48024012/source 200 447 ms - 27904 
-[38;5;111m[92e07f53][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/92e07f53-0ece-4d92-9c1b-6c9c48024012/screenshot[39m {}
-[38;5;111m[92e07f53][0m[38;5;86m[HTTP][0m <-- GET /wd/hub/session/92e07f53-0ece-4d92-9c1b-6c9c48024012/screenshot 200 1170 ms - 279864 
-[38;5;111m[92e07f53][0m[38;5;86m[HTTP][0m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/92e07f53-0ece-4d92-9c1b-6c9c48024012[39m {}
-[38;5;111m[92e07f53][0m[38;5;82m[AppiumDriver@2b8f][0m Removing session 92e07f53-0ece-4d92-9c1b-6c9c48024012 from our master session list
-[38;5;111m[92e07f53][0m[38;5;-101m[AndroidUiautomator2Driver@ccfb][0m Restoring hidden api policy to the device default configuration
-[38;5;111m[92e07f53][0m[38;5;86m[HTTP][0m <-- DELETE /wd/hub/session/92e07f53-0ece-4d92-9c1b-6c9c48024012 200 209 ms - 14 
+[38;5;86m[HTTP][0m <-- GET /wd/hub/status 200 1 ms - 200 
+[38;5;156m[28658047][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/28658047-f0b2-4e62-8603-4ae08c9c1518/timeouts[39m {"implicit":60000}
+[38;5;156m[28658047][0m[38;5;86m[HTTP][0m <-- POST /wd/hub/session/28658047-f0b2-4e62-8603-4ae08c9c1518/timeouts 200 2 ms - 14 
+[38;5;156m[28658047][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/28658047-f0b2-4e62-8603-4ae08c9c1518/source[39m {}
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Driver proxy active, passing request on via HTTP proxy
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Replacing sessionId ee2597ba-fda0-4be9-80cb-d7ee0fb24a3e with 28658047-f0b2-4e62-8603-4ae08c9c1518
+[38;5;156m[28658047][0m[38;5;86m[HTTP][0m <-- GET /wd/hub/session/28658047-f0b2-4e62-8603-4ae08c9c1518/source 200 919 ms - 12655 
+[38;5;156m[28658047][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/28658047-f0b2-4e62-8603-4ae08c9c1518/screenshot[39m {}
+[38;5;156m[28658047][0m[38;5;86m[HTTP][0m <-- GET /wd/hub/session/28658047-f0b2-4e62-8603-4ae08c9c1518/screenshot 200 650 ms - 306868 
+[38;5;156m[28658047][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/28658047-f0b2-4e62-8603-4ae08c9c1518/source[39m {}
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Driver proxy active, passing request on via HTTP proxy
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Replacing sessionId ee2597ba-fda0-4be9-80cb-d7ee0fb24a3e with 28658047-f0b2-4e62-8603-4ae08c9c1518
+[38;5;156m[28658047][0m[38;5;86m[HTTP][0m <-- GET /wd/hub/session/28658047-f0b2-4e62-8603-4ae08c9c1518/source 200 316 ms - 29752 
+[38;5;156m[28658047][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/28658047-f0b2-4e62-8603-4ae08c9c1518/screenshot[39m {}
+[38;5;156m[28658047][0m[38;5;86m[HTTP][0m <-- GET /wd/hub/session/28658047-f0b2-4e62-8603-4ae08c9c1518/screenshot 200 1042 ms - 284688 
+[38;5;156m[28658047][0m[38;5;86m[HTTP][0m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/28658047-f0b2-4e62-8603-4ae08c9c1518[39m {}
+[38;5;156m[28658047][0m[38;5;64m[AppiumDriver@c46a][0m Removing session 28658047-f0b2-4e62-8603-4ae08c9c1518 from our master session list
+[38;5;156m[28658047][0m[38;5;-121m[AndroidUiautomator2Driver@eedd][0m Restoring hidden api policy to the device default configuration
+[38;5;156m[28658047][0m[38;5;86m[HTTP][0m <-- DELETE /wd/hub/session/28658047-f0b2-4e62-8603-4ae08c9c1518 200 241 ms - 14 
 [38;5;112m[Appium][0m Received SIGTERM - shutting down
 [38;5;86m[HTTP][0m Closing Appium HTTP server
 [38;5;86m[HTTP][0m Appium HTTP server has been succesfully closed after 0ms

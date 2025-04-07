@@ -42,6 +42,7 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
+import scroll.*
 
 
 class Cart {
@@ -106,8 +107,8 @@ class Cart {
 
 			if (addedCount < counts) {
 				// Scroll to load more items
-				Mobile.swipe(400, 1200, 400, 500)
-
+				ScrollTo scrollto = new ScrollTo()
+				scrollto.swipeaction(400, 1350, 400, 500)
 				Mobile.delay(2)
 			}
 		}
@@ -151,50 +152,51 @@ class Cart {
 
 	@And("User verifies the product in the cart")
 	def Verify_Cart_Page() {
-				
+
 		int totalVerified = 0
 		int totalToVerify = GlobalVariable.counts
 		int scrollAttempt = 0
 		int maxScroll = 10 // prevent infinite scroll just in case
-	
+
 		while (totalVerified < totalToVerify && scrollAttempt < maxScroll) {
 			List<WebElement> cartItems = MobileDriverFactory.getDriver().findElements(By.xpath("//android.view.ViewGroup[@content-desc='test-Item']"))
-	
+
 			for (int i = 0; i < cartItems.size(); i++) {
 				if (totalVerified >= totalToVerify) {
 					break
 				}
-	
+
 				WebElement item = cartItems[i]
-	
+
 				// Get product info from inside this item block
 				String name = item.findElement(By.xpath(".//android.view.ViewGroup[2]/android.widget.TextView[1]")).getText()
 				String price = item.findElement(By.xpath(".//android.view.ViewGroup[4]/android.widget.TextView[1]")).getText()
 				String desc = item.findElement(By.xpath(".//android.view.ViewGroup[2]/android.widget.TextView[2]")).getText()
-	
+
 				// Verifying with stored values
 				Mobile.verifyMatch(name, GlobalVariable.productNames[totalVerified], false)
 				Mobile.verifyMatch(price, GlobalVariable.productPrices[totalVerified], false)
 				Mobile.verifyMatch(desc, GlobalVariable.productDesc[totalVerified], false)
-	
+
 				totalVerified++
 			}
-	
+
 			if (totalVerified < totalToVerify) {
-				Mobile.swipe(500, 1550, 500, 500)
-				Mobile.delay(2)
+				Mobile.delay(1)
+				ScrollTo scrollto = new ScrollTo()
+				scrollto.swipeaction(400, 1850, 400, 500)
+				Mobile.delay(3)
 				scrollAttempt++
 			}
 		}
-	
+
 		if (totalVerified == totalToVerify) {
 			println "Verified ${totalVerified} items in the cart successfully."
 		} else {
 			KeywordUtil.markFailed("Expected ${totalToVerify}, but only verified ${totalVerified}.")
 		}
-		
 	}
-	
+
 	@When("User removes product from cart")
 	def Update_Cart() {
 
@@ -244,16 +246,18 @@ class Cart {
 			}
 
 			if (totalVerified < totalToVerify) {
-				Mobile.swipe(500, 1550, 500, 500)
-				Mobile.delay(2)
+				Mobile.delay(1)
+				ScrollTo scrollto = new ScrollTo()
+				scrollto.swipeaction(400, 1800, 400, 500)
+				Mobile.delay(3)
 				scrollAttempt++
 			}
 		}
 
 		if (totalVerified == totalToVerify) {
-			println "✅ Verified ${totalVerified} items. Cart successfully updated."
+			println "Verified ${totalVerified} items. Cart successfully updated."
 		} else {
-			KeywordUtil.markFailed("❌ Expected ${totalToVerify} items, but only verified ${totalVerified}.")
+			KeywordUtil.markFailed("Expected ${totalToVerify} items, but only verified ${totalVerified}.")
 		}
 	}
 }
